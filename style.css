@@ -1,0 +1,699 @@
+/* GLOBAL STYLES */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section > .container {
+    margin: 200px auto;
+}
+
+/* GLOBAL STYLES */
+
+/*  GRIDS */
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*="col-"] {
+    float: left;
+    min-height: 1px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-offset-1 {
+    margin-left: 8.33%;
+}
+
+.col-offset-2 {
+    margin-left: 16.66%;
+}
+
+.col-offset-3 {
+    margin-left: 25%;
+}
+
+.col-offset-4 {
+    margin-left: 33.33%;
+}
+
+.col-offset-5 {
+    margin-left: 41.66%;
+}
+
+.col-offset-6 {
+    margin-left: 50%;
+}
+
+.col-offset-7 {
+    margin-left: 58.33%;
+}
+
+.col-offset-8 {
+    margin-left: 66.66%;
+}
+
+.col-offset-9 {
+    margin-left: 75%;
+}
+
+.col-offset-10 {
+    margin-left: 83.33%;
+}
+
+.col-offset-11 {
+    margin-left: 91.66%;
+}
+
+.col-offset-12 {
+    margin-left: 100%;
+}
+
+/*  GRIDS */
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+/* HEADER */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: grey;
+    background-color: rgba(0.0.0 0.5)
+}
+
+header > nav img {
+    padding: 10px 0;
+}
+
+header > nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header > nav ul > li {
+    display: inline-block;
+}
+
+header > nav ul > li > a {
+    line-height: 50px;
+    display: block;
+    color: #fff;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header > nav ul > li > a:hover {
+    background: #ccc;
+}
+
+/* HEADER */
+
+/* HERO */
+
+.hero {
+    background-image: url("https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 120%;
+    height: calc(100vh - 50px);
+    position: relative;
+}
+
+.slogan {
+    float: right;
+    background-color: rgba(66, 64, 64, 0.322);
+    max-width: 800px;
+    margin-top: 20%;
+    height: cover;
+    padding: 40px 50px 40px 40px;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.slogan p,
+.slogan h1 {
+    font-size: 2em;
+}
+
+.slogan p {
+    font-weight: 200;
+}
+
+.slider {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-button {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 20px 8px;
+    border-radius: 50%;
+    background-color: rgba(66, 64, 64, 0.555);
+    transition: .4s;
+}
+
+.slider-button:hover {
+    background-color: #fff;
+    transform: scale(1.2);
+}
+
+/* HERO */
+
+/* BENEFITS */
+
+.benefits i {
+    font-size: 50px;
+    border-radius: 15%;
+    padding: 20px;
+    width: 100px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: #313332;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.benefits .col-4 {
+    text-align: center;
+}
+
+.benefits p {
+    margin-top: 15px;
+    text-indent: 50px;
+    font-weight: 200;
+    line-height: 25px;
+}
+
+.benefits h1 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #313332;
+    transition: .3s;
+}
+
+.benefits i:hover ~ h1 {
+    color: aqua;
+    transform: scale(1.1);
+}
+
+.benefits i:hover {
+    background-color: aqua;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* BENEFITS */
+
+/* WORK */
+
+.work {
+    text-align: center;
+}
+
+.work h1 {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: #313332;
+    font-weight: 800;
+}
+
+.work p {
+    font-weight: 200;
+    line-height: 25px;
+}
+
+/* WORK */
+
+/* GALLERY */
+
+.gallery img {
+    display: block;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.gallery .wrap-icon {
+    position: absolute;
+    font-size: 16px;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery .fa {
+    margin: 10px;
+    background-color: rgba(255, 254, 254, 0.685);
+    border-radius: 15%;
+    padding: 4px;
+    cursor: pointer;
+}
+
+
+.gallery [class*="col-"] {
+    position: relative;
+}
+
+.gallery .layer {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(20, 20, 24, 0.50);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s;
+}
+
+.gallery [class*="col-"]:hover .layer {
+    bottom: 0;
+    height: 100%;
+}
+
+/* GALLERY */
+
+/* TEAM */
+
+.team .col-3 {
+    position: relative;
+}
+
+.team img {
+    display: block;
+    margin: auto;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.person {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 28px;
+}
+
+/* TEAM */
+
+/* MOBILE */
+
+.mobile {
+    position: relative;
+    color: white;
+    text-align: left;
+}
+
+.mobile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(http://media.tnh.me/53b8d38d1cb17a3ca07024b3/53fa6d52ddcb212b87b445a8);
+    filter: brightness(0.4);
+    z-index: -1;
+}
+
+.mobile .row {
+    overflow: hidden;
+}
+
+
+.ipad {
+    width: 90%;
+    padding-top: 10px;
+}
+
+.mobile .col-4 {
+    position: relative;
+}
+
+.container-tablet {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-57%, -39%);
+    width: 78%;
+}
+
+.container-tablet .row {
+    height: 28%;
+}
+
+.container-tablet img {
+    width: 100%;
+    display: block;
+}
+
+
+.mobile .col-8 {
+    margin-top: 70px;
+    padding-left: 50px;
+}
+
+.mobile h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.mobile p {
+    float: left;
+    width: 40%;
+    font-weight: 200;
+    padding: 0 15px;
+}
+
+.mobile p:nth-of-type(2) {
+    font-style: italic;
+}
+
+/* MOBILE */
+
+/*REZENTATION-SET */
+
+.presentation-set {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.presentation-set h1 {
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+.presentation-set p {
+    color: aqua;
+    font-weight: 700;
+}
+
+/* PREZENTATION-SET */
+
+.footer {
+    background-color: grey;
+    text-align: left;
+    color: white;
+}
+
+.footer .container {
+    margin: 70px auto;
+}
+
+.footer > .container > .row > .col-4 {
+    position: relative;
+}
+
+.footer > .container > .row > .col-4 {
+    padding: 0 25px;
+    height: 300px;
+}
+
+.footer h1 {
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.footer > .container > .row > .col-4::after {
+    content: "";
+    left: 57%;
+    bottom: 87%;
+    position: absolute;
+    height: 2px;
+    background-color: #fff;
+    width: 97px;
+}
+
+.footer h2 {
+    margin-bottom: 50px;
+    font-size: 1em;
+}
+
+.footer p {
+    font-weight: 200;
+    margin-bottom: 28px;
+}
+
+.social i {
+    color: aqua;
+    transition: all 0.4s linear;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.twitter:hover {
+    color: white;
+}
+
+.youtube:hover,
+.google:hover {
+    color: red;
+}
+
+.facebook:hover {
+    color: blue;
+}
+
+.linkedin:hover {
+    color: black;
+}
+
+.instagram:hover {
+    color: saddlebrown;
+}
+
+.footer > p.info {
+    padding: 25px 0;
+    background-color: #363636;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+
+@media (max-width: 767px) {
+    /* For tablets: */
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+    .benefits {
+        margin-top: 100px;
+    }
+    header nav {
+        text-align: center;
+    }
+
+    header > nav ul {
+        list-style-type: none;
+        float: none;
+    }
+
+    header > nav ul > li {
+        display: block;
+    }
+
+    header > nav ul > li > a {
+        line-height: 35px;
+    }
+    .slogan p,
+    .slogan h1 {
+        font-size: 1.5em;
+    }
+
+    .numbers {
+        padding-top: 20px;
+    }
+
+    .phone {
+        text-align: center;
+    }
+
+    .phone-text {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer > .container > .row > .col-4::after {
+        opacity: 0;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* For desktop: */
+    .col-m-1 {
+        width: 8.33%;
+    }
+    .col-m-2 {
+        width: 16.66%;
+    }
+    .col-m-3 {
+        width: 25%;
+    }
+    .col-m-4 {
+        width: 33.33%;
+    }
+    .col-m-5 {
+        width: 41.66%;
+    }
+    .col-m-6 {
+        width: 50%;
+    }
+    .col-m-7 {
+        width: 58.33%;
+    }
+    .col-m-8 {
+        width: 66.66%;
+    }
+    .col-m-9 {
+        width: 75%;
+    }
+    .col-m-10 {
+        width: 83.33%;
+    }
+    .col-m-11 {
+        width: 91.66%;
+    }
+    .col-m-12 {
+        width: 100%;
+    }
+    .numbers {
+        padding-top: 20px;
+    }
+    .footer > .container > .row > .col-4::after {
+        opacity: 0;
+    }
+}
